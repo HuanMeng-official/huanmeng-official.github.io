@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>魔方</title>
+
+  <meta name="viewport"
+
+    content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+  <div class="ui">
+
+    <div class="ui__background"></div>
+
+    <div class="ui__game"></div>
+
+    <div class="ui__texts">
+
+      <h1 class="text text--title">
+
+        <span>魔方</span>
+
+      </h1>
+
+      <div class="text text--note">
+
+        双击即可开始
+
+      </div>
+
+      <div class="text text--timer">
+
+        0:00
+
+      </div>
+
+      <div class="text text--complete">
+
+        <span>完成!</span>
+
+      </div>
+
+      <div class="text text--best-time">
+
+        <icon trophy></icon>
+
+        <span>最佳时间!</span>
+
+      </div>
+
+    </div>
+
+    <div class="ui__prefs">
+
+      <range name="flip" title="转动方式" list="迅速&nbsp;,顺滑,弹跳"></range>
+
+      <range name="scramble" title="打乱步数" list="20,25,30"></range>
+
+      <range name="fov" title="角度" list="Ortographic,Perspective"></range>
+
+      <range name="theme" title="配色" list="Cube,Erno,Dust,Camo,Rain"></range>
+
+    </div>
+
+    <div class="ui__stats">
+
+      <div class="stats" name="total-solves">
+
+        <i>完成数:</i><b>-</b>
+
+      </div>
+
+      <div class="stats" name="best-time">
+
+        <i>最佳时间:</i><b>-</b>
+
+      </div>
+
+      <div class="stats" name="worst-time">
+
+        <i>最慢时间:</i><b>-</b>
+
+      </div>
+
+      <div class="stats" name="average-5">
+
+        <i>5次的平均时间:</i><b>-</b>
+
+      </div>
+
+      <div class="stats" name="average-12">
+
+        <i>12次的平均时间:</i><b>-</b>
+
+      </div>
+
+      <div class="stats" name="average-25">
+
+        <i>25次的平均时间:</i><b>-</b>
+
+      </div>
+
+    </div>
+
+    <div class="ui__buttons">
+
+      <button class="btn btn--bl btn--stats">
+
+        <icon trophy></icon>
+
+      </button>
+
+      <button class="btn btn--bl btn--prefs">
+
+        <icon settings></icon>
+
+      </button>
+
+      <button class="btn btn--bl btn--back">
+
+        <icon back></icon>
+
+      </button>
+
+      <button class="btn btn--br btn--pwa">
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src='./js/three.min.js'></script>
+
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
